@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.title,
+.pronouns,
+.text__right {
+  font-weight: 700;
+}
+.text__left {
+  font-weight: 600;
+}
+.italic {
+  font-style: italic;
+}
+html,
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}

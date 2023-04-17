@@ -1,0 +1,79 @@
+/* first page */
+
+.layer-scroll {
+  overflow-y: scroll;
+  max-height: 100vh;
+  background-color: red;
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.layer-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.component {
+  background-color: #ecf4ef;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
+}
+.component__left,
+.component__right {
+  width: 50%;
+  height: 100%;
+}
+.component__right {
+  display: grid;
+  background-color: #598888;
+  padding-right: 10%;
+  font-size: 200%;
+  align-content: center;
+}
+.component__left {
+  display: grid;
+  align-content: center;
+  padding-left: 10%;
+  font-size: 140%;
+}
+.spacing {
+  letter-spacing: -1px;
+}
+.text__left,
+.title {
+  color: #598888;
+}
+.pronouns {
+  color: #90b6b6;
+}
+
+.text__right {
+  color: #ecf4ef;
+  text-align: right;
+  font-weight: 700;
+}
+
+/* second page */
+.choose {
+  width: 100%;
+  height: 100vh;
+  background-color: #ecf4ef;
+  scroll-snap-align: start;
+  display: flex;
+}
+/* .border-right {
+  border-right: solid 1px #ecf4ef;
+} */
+.day {
+  width: 20%;
+  height: 100%;
+  font-size: 200%;
+  display: flex;
+  background-color: #598888;
+}
+.day > p {
+  margin: auto;
+  font-weight: 600;
+  color: #ecf4ef;
+}
