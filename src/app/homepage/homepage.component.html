@@ -7,7 +7,13 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="layer-scroll">
+    <div class="scroll-indicator" [ngClass]="{ 'fade-in-scroll': scrolled }">
+      <div
+        class="fill"
+        [ngClass]="{ down: 'scroll-down', up: 'scroll-up' }[scrollDirection]"
+      ></div>
+    </div>
+    <div class="layer-scroll" (scroll)="scroll($event)">
       <div class="component">
         <div class="component__left">
           <h1 class="title">Something.</h1>
@@ -29,11 +35,38 @@
         </div>
       </div>
       <div class="choose">
-        <div class="day border-right"><p>day 1</p></div>
-        <div class="day border-right"><p>day 2</p></div>
-        <div class="day border-right"><p>day 3</p></div>
-        <div class="day border-right"><p>day 4</p></div>
-        <div class="day"><p>day 5</p></div>
+        <div class="day border-right">
+          <div class="static-day">
+            <p>day 1</p>
+          </div>
+          <div class="hover-day" (click)="routeToLetter('beauty')">
+            <p>Beauty</p>
+          </div>
+        </div>
+        <div class="day border-right">
+          <div class="static-day"><p>day 2</p></div>
+          <div class="hover-day" (click)="routeToLetter('kindness')">
+            <p>Kindness</p>
+          </div>
+        </div>
+        <div class="day border-right">
+          <div class="static-day"><p>day 3</p></div>
+          <div class="hover-day" (click)="routeToLetter('sincerity')">
+            <p>Sincerity</p>
+          </div>
+        </div>
+        <div class="day border-right">
+          <div class="static-day"><p>day 4</p></div>
+          <div class="hover-day" (click)="routeToLetter('confusion')">
+            <p>Confussion</p>
+          </div>
+        </div>
+        <div class="day">
+          <div class="static-day"><p>day 5</p></div>
+          <div class="hover-day" (click)="routeToLetter('you')">
+            <p></p>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="component">
+      <h1 class="title">{{ title }}</h1>
+      <p class="pronounce">
+        &#123;
+        <span class="spacing" *ngIf="text === '1'">bju &#x2022; tee</span>
+        <span class="spacing" *ngIf="text === '2'">kined &#x2022; nuhs</span>
+        <span class="spacing" *ngIf="text === '3'"
+          >suhn &#x2022; seh &#x2022; ruh &#x2022; tee</span
+        >
+        <span class="spacing" *ngIf="text === '4'"
+          >kuhn &#x2022; fyoo &#x2022; zhn</span
+        >
+        <span class="spacing" *ngIf="text === '5'">yoo</span>
+        &#125;
+        <span class="semi-bold italic spacing">noun.</span>
+      </p>
+      <p class="text">
+        <span *ngIf="text === '1'">
+          Her smiles were the first things that came to my mind. The first time
+          I looked at her, the charming smiles were all around her. The
+          brightest stars shine through my eyes. The one that brightens my day.
+          <br /><br />
+          She is an Angel. I want to see her everyday.</span
+        >
+        <span *ngIf="text === '2'">
+          The positivity around her. Compliment she gave to others. At that
+          time, I know her. It seems that her charm was charming to everyone.
+          She is perfect. The only one that I think of is.
+          <br /><br />
+          I like her. I try to deny it. It may sound cliche, but the genuine
+          feeling was unreal. A younger me trying to hide it. He did.</span
+        >
+        <span *ngIf="text === '3'">
+          The action she does is spontaneous and seems natural. She does all of
+          that flawlessly. She might suffer a lot from it, but she always does
+          it again and again. I can’t imagine how much she saves others. When I
+          say others, I’m actually referring to me.
+          <br /><br />
+          She doesn’t aware of it. She is a pure soul who believes in hope,
+          laughter, and love.</span
+        >
+        <span *ngIf="text === '4'">
+          Fate may bring us close. Time and places say otherwise. She is a
+          mystery. The code that I can’t crack. The labyrinth I can’t escape.
+          The problem I can’t solve.
+          <br /><br />
+          She made me question myself. Hopeless and clueless were the
+          descriptive words to describe the situation. She was trapped in my
+          head. I tried to bury that, but then I realize. I can’t</span
+        >
+        <span *ngIf="text === '5'">
+          The search for ‘something’ is coming to an end. Do i know what it is?
+          <span class="italic">spoiler: i still don’t know yet.</span>
+          <br /><br />
+          Something is there yet to be unsolved. The research about ‘something’
+          left the conclusion. There’s always something in you that left me
+          entangled. Kindness, beauty, sincerity, and confusion do mean nothing.
+          You do mean everything to me.</span
+        >
+      </p>
+      <iframe
+        *ngIf="text === '1'"
+        class="spotify-embed"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/track/7eQHxigpuDJjCG50JyzU8v?utm_source=generator"
+        width="30%"
+        height="148"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe
+      ><iframe
+        *ngIf="text === '2'"
+        class="spotify-embed"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/track/3eBHh35RljNlNtM3KhKhmM?utm_source=generator"
+        width="30%"
+        height="148"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe
+      ><iframe
+        *ngIf="text === '3'"
+        class="spotify-embed"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/track/3jgrNd3uPU1c2PFBKYsV9d?utm_source=generator"
+        width="30%"
+        height="148"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe
+      ><iframe
+        *ngIf="text === '4'"
+        class="spotify-embed"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/track/3lG6OtGDsYAOALxEmubQQm?utm_source=generator&theme=0"
+        width="30%"
+        height="148"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe
+      ><iframe
+        *ngIf="text === '5'"
+        class="spotify-embed"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/track/6L68DyIsn6SqEN9rStOXb9?utm_source=generator"
+        width="30%"
+        height="148"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </body>
+</html>
